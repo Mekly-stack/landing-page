@@ -1,23 +1,90 @@
-.inner-header{
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+/* Set the display, width, and alignment for the left and right parts of the navigation bar */
+.first-section {
   display: flex;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
+  background-color: #1f2937;
+
+}
+/* Style the header logo */
+#header-logo{
+font-size: 24px;
+color: #f9faf8;
 }
 
+/* Style the navigation links */
 .header-link {
-  font-size: 20px;
-  list-style: none;
-  display: inline-block;
-  margin-left: 50px;
+  font-size: 18px;
+  color: #e5e7eb;
 }
 
-.menu {
+
+/* The left part of the navigation bar */
+.navbar-left {
+ display: flex;
+ align-items: center;
+ justify-content: flex-start;
+  background-color: #1f2937;
+}
+
+/* The right part of the navigation bar */
+.navbar-right {
   display: flex;
   justify-content: flex-end;
-  flex-direction: row;
+  align-items: center;
+  background-color: #1f2937;
 }
 
-section {
+/* Set the display and flex direction for the navigation links */
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  width: 20%;
+  
+}
+
+.section-1 {
+  border: 4px solid lime;
+  min-height: 200px;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section-image {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+}
+
+.section-text {
+flex-basis: 50%;
+display: flex;
+justify-content: center;
+flex-direction: column;
+padding: 0 20px;
+
+}
+
+.section-2,.section-3, .section-4, .inner-footer { 
   border: 4px solid lime;
   min-height: 200px;
   width: 100%;
@@ -25,26 +92,8 @@ section {
   display: inline-block;
 }
 
-header, footer, main {
-border: 4px solid red;
-min-height: 100px;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  border: 10px solid blue;
-  min-height: 100vh;
-}
-main {
-  flex-grow: 1;
-  border: 10px solid pink;
-}
-
-.inner-1, inner-2, inner-3, inner-4 {
-  display: block;
-  border: 4px solid orange;
-  padding: 10px;
+.h1 {
+  font-size: 48px;
 }
 
 picture {
@@ -53,6 +102,6 @@ picture {
 
 img { 
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
